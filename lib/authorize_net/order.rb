@@ -18,7 +18,7 @@ module AuthorizeNet
     
     def to_hash
       hash = {
-        :invoice_num => @invoice_number,
+        :invoice_num => @invoice_num,
         :description => @description,
         :tax => @tax,
         :tax_name => @tax_name,
