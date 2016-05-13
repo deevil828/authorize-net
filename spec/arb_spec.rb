@@ -124,7 +124,7 @@ end
 describe AuthorizeNet::ARB::Subscription do
   
   before do
-    @attributes = [:name, :length, :unit, :start_date, :total_occurrences, :trial_occurrences, :amount, :trial_amount, :invoice_number, :description, :subscription_id]
+    @attributes = [:name, :length, :unit, :start_date, :total_occurrences, :trial_occurrences, :amount, :trial_amount, :invoice_num, :description, :subscription_id]
     @attribute_values = {
       :name => "daily foo",
       :length => 1,
