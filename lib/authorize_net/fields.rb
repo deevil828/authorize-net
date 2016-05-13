@@ -16,7 +16,7 @@ module AuthorizeNet
         :authorization_code,
         :avs_response,
         :transaction_id,
-        :invoice_number,
+        :invoice_num,
         :description,
         :amount,
         :method,
@@ -372,7 +372,7 @@ module AuthorizeNet
         {:bankRoutingNumberMasked => :bank_aba_code_masked},
         {:bankAccountNumberMasked => :bank_acct_num_masked},
         {:order => [
-          {:invoiceNumber => :invoice_number},
+          {:invoiceNumber => :invoice_num},
           {:description => :description},
           {:purchaseOrderNumber => :po_num}
         ]},
@@ -675,7 +675,7 @@ module AuthorizeNet
       )
       
       ORDER_ENTITY_DESCRIPTION = EntityDescription.new([
-          {:invoice_number => :invoice_num},
+          {:invoiceNumber => :invoice_num},
           {:description => :description},
           {:purchaseOrderNumber => :po_num}
         ],
