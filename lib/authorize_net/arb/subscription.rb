@@ -65,7 +65,7 @@ module AuthorizeNet::ARB
         :subscription_trial_occurrences => @trial_occurrences,
         :subscription_amount => @amount,
         :subscription_trial_amount => @trial_amount,
-        :invoice_num => @invoice_number,
+        :invoice_num => @invoice_num,
         :description => @description,
         :subscription_id => @subscription_id
       }
